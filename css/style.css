@@ -1,0 +1,76 @@
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    /* reset global volta a configuração padrão,deixa livre para que o desenvolver consiga mexer no estilo da página */
+
+
+
+    a {
+        color: rgb(56, 27, 220);
+        font-size: 30px;
+        font-family: "fira Code";
+        font-weight: 600;
+        /* weight espessura,peso daf fonte */
+        text-decoration: none;
+        margin-right: 60px;
+        /* empurra o elemento que está do lado  */
+    }
+
+    body {
+
+        position: absolute;
+        background-image: url(https://magazine.zarpo.com.br/wp-content/uploads/2019/02/5-motivos-para-conhecer-a-Tailandia.jpg);
+        /* Imagem de fundo */
+        background-repeat: no-repeat;
+        /* para não repetir a imagem */
+        background-size: cover;
+        /* se ajusta ao tamanho de plano de fundo  */
+        width: 100vw;
+        height: 100vh;
+        opacity: 70%
+    }
+
+    .fundo2 {
+        background-color: cornflowerblue;
+    }
+
+    .fundo1 {
+        background-color: chocolate;
+    }
+
+    .fundo3 {
+        background-color: coral;
+
+    }
+
+    .frase {
+        color: rgb(141, 13, 13);
+
+    }
+
+    nav ul {
+        background-color: black;
+        list-style: none;
+        display: flex;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+
+    }
+
+    p {
+        text-align:center;
+        font-size: 30px;
+        color: rgb(8, 6, 44);
+        
+
+        
+    }
+
+        
+    
