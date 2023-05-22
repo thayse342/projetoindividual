@@ -31,46 +31,32 @@
         /* se ajusta ao tamanho de plano de fundo  */
         width: 100vw;
         height: 100vh;
-        opacity: 70%
+        backdrop-filter: blur(2px);      
     }
-
-    .fundo2 {
-        background-color: cornflowerblue;
-    }
-
-    .fundo1 {
-        background-color: chocolate;
-    }
-
-    .fundo3 {
-        background-color: coral;
-
-    }
-
-    .frase {
-        color: rgb(141, 13, 13);
-
-    }
-
     nav ul {
         background-color: black;
         list-style: none;
         display: flex;
     }
-
     nav ul li {
         margin-right: 20px;
-
     }
-
-    p {
-        text-align:center;
+    .conteudo-p {
+        margin-top: 60px;
+        text-align: center;
         font-size: 30px;
-        color: rgb(8, 6, 44);
-        
-
-        
+        color: rgb(8, 6, 44);   
     }
+    .fotoperfil1 { 
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .fotoperfil2{ 
+    width: 200px;
+    height:200px;
+    border-radius: 50px;
 
+}
         
     
