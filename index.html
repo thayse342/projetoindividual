@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
-
+<!-- cabeça da página aqui faz toda a configuração -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,34 +8,86 @@
     <title>Quem sou Eu</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https: //fonts.googleapis.com/css2?family= família= Fira+Código:wght@500 &Roboto & display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+<!-- tag <body> é meu corpo da página -->
 
-<body class="fundo3">
+<body>
+
+    <!-- cabeçalho ou topo -->
     <header>
-        <!-- cabeçalho ou topo -->
-        <nav class="navegar">
-            <!-- navegação na página -->
-            <ul>
-                <li> <a href="index.html">Sobre </a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="contato.html">Contato</a> </li>
-            </ul>
+        <h1>Thaise</h1>
+        <!-- navegação na página -->
+        <nav>
+
+            <!-- <a>  ancora da navegação, serve para que o navegador consiga ir paraas seções da página -->
+            <a href="#resumo">Sobre </a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contato">Contato</a>
+
         </nav>
     </header>
-    
+    <!-- tag <main> parte principal da página -->
     <main>
-        <section>
-            <p class="conteudo-p">
-                Meu nome é Thaise Araujo, tenho 35 anos, comecei um curso de Tecnologia Agroindustrial em Alimentos porém troquei por Processos Gerenciais, no qual sou formada.  
-                <br>
-                Atualmente trabalho como cuidadora de idosos.
-                <br>
-                Gosto de aprender e compartilhar informações para melhorar o meu desenvolvimento pessoal.
-            </p>
-            <div class="fotoperfil1"> 
-               <img class="fotoperfil2" src="img/fotoperfil.JPG" alt=""> 
+        <!-- Tag section divide a página de acordo com o assunto -->
+        <section id="resumo">
+            <h2>Olá! Meu nome é Thaise</h2>
+            <!-- tag div nesse caso utilizei para englobar meu parágrafo com minha imagem para utilizar display flex -->
+            <div>
+                <p>
+                    Tenho 35 anos, comecei um curso de Tecnologia Agroindustrial em Alimentos
+                    porém troquei por Processos Gerenciais, no qual sou formada.
+
+                    Atualmente trabalho como cuidadora de idosos.
+
+                    Gosto de aprender e compartilhar informações para melhorar o meu desenvolvimento pessoal.Procuro em
+                    um
+                    futuro breve trabalhar na área de tecnologia como desenvolvedora web, onde tenho o anceio de
+                    desenvolver
+                    algum aplicativo que impacte de maneira positiva as pessoas ao meu redor.
+                </p>
+
+                <img src="./img/fotoperfil.JPG" alt="fotoDaThaise">
             </div>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <!-- Utilizei class container para manipular melhor meu pragrafaco com minhas fotos -->
+            <div class="container">
+                <p> Viajar, Conhecer novas culturas,ritmos diferentes,estudar o céu, fazer novos amigos,conhecer novos
+                    modos de viver, compartilhar culturas , ler livros diferentes,estudar como os animais e a natureza
+                    se comportam é algo que me motiva a querer sempre descobrir coisas novas e que dá maior sentido a
+                    minha vida.
+                </p>
+
+                <div class="imagens">
+                    <img src="img/baleia saindo do mar.png" alt="baleia saindo do mar">
+                    <img src="./img/ceu estrelado.png" alt="ceu estrelado">
+                    <img src="./img/livros.png" alt="livros">
+                </div>
+
+            </div>
+        </section>
+        <section id="contato">
+            <form action="">
+                <h2>Contato</h2>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome">
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email">
+                <label for="mensagem">Mensagem: </label>
+                <textarea name="mensagem" id="mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <!-- form cria formulario interativo,action atributo de destino dos dados url -->
+            <!-- label faz a ligação entre os elementos nome e a caixa do lado -->
+            <!-- button type submit pega dados do formulário Enviar para servidor -->
+        </section>
     </main>
+    <!--tag de rodapé da página -->
+    <footer>
+        <p>Construido com paixão</p>
+    </footer>
 </body>

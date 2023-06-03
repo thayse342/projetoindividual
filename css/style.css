@@ -1,81 +1,146 @@
-    * {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        text-decoration: none;
-    }
+/* reset global volta a configuração padrão,deixa livre para que o desenvolver consiga mexer no estilo da página */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
 
-    /* reset global volta a configuração padrão,deixa livre para que o desenvolver consiga mexer no estilo da página */
+/* Deixei a font family no body para já pegar em toda página */
+body {
+    font-family: 'Fira Code', monospace;
+}
 
-
-
-    a {
-        color: rgb(56, 27, 220);
-        font-size: 30px;
-        font-family: "fira Code";
-        font-weight: 600;
-        /* weight espessura,peso daf fonte */
-        text-decoration: none;
-        margin-right: 60px;
-        /* empurra o elemento que está do lado  */
-    }
-
-    body {
-
-        position: absolute;
-        background-image: url(https://magazine.zarpo.com.br/wp-content/uploads/2019/02/5-motivos-para-conhecer-a-Tailandia.jpg);
-        /* Imagem de fundo */
-        background-repeat: no-repeat;
-        /* para não repetir a imagem */
-        background-size: cover;
-        /* se ajusta ao tamanho de plano de fundo  */
-        width: 100vw;
-        height: 100vh;
-        backdrop-filter: blur(2px);
-    }
-
-    nav ul {
-        background-color: black;
-        list-style: none;
-        display: flex;
-    }
-
-    nav ul li {
-        margin-right: 20px;
-    }
-
-    .conteudo-p {
-    
-    }
-
-    .fotoperfil1 {
-        display: flex;
-        justify-content: center;
-        margin-top: 40px;
-    }
-
-    .fotoperfil2 {
-        width: 200px;
-        height: 200px;
-        border-radius: 50px;
-    }
-
-    .gostos {
-        margin-top: 60px;
-        text-align: center;
-        font-size: 30px;
-        color: rgb(8, 6, 44);
-    }
-    .fotos-hobbies{
-        display: flex;
-        justify-content: center;
-        gap: 25px;
-    }  
-.imagem1{
-    width: 200px;
-    height: 200px;
+header {
     display: flex;
     align-items: center;
-    border-radius: 50%;
+    justify-content: space-between;
+    position: fixed;
+    height: 50px;
+    width: 100vw;
+    background-color: #172026;
 
+}
+
+header h1 {
+    font-size: 30px;
+    color: #04BFAD;
+    letter-spacing: 2px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+header nav a {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #04BFAD;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    height: 100vh;
+    padding: 100px 30px;
+}
+
+main section div {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    text-align: justify;
+}
+
+main section div img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100px;
+    padding: 20px;
+}
+
+main section#hobbies div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+
+main section#contato form {
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+    box-shadow: 0 0 10px rgba(7, 8, 16, 0.6);
+    padding: 30px;
+    border-radius: 20px;
+    align-self: center;
+    background-color: #172026;
+    color: #04bfad;
+}
+
+main section#contato form h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+main section#contato form label {
+    display: block;
+    margin-top: 30px;
+}
+
+main section#contato form input,
+main section#contato form textarea {
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-weight: 400;
+}
+
+
+main section#contato form input {
+    height: 25px;
+}
+
+
+main section#contato form textarea {
+    height: 60px;
+}
+
+main section#contato form button {
+    width: 100%;
+    margin-top: 45px;
+    padding: 15px 0;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+main section#contato form button:hover {
+    scale: 1.1;
+    background-color: #172026;
+    color: #04bfad;
+}
+
+footer {
+    height: 45px;
+    background-color: #172026;
+    color: #04bfad;
+    text-align: center;
+    padding: 15px;
+    font-size: large;
 }
