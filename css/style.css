@@ -12,6 +12,13 @@ body {
     font-family: 'Fira Code', monospace;
 }
 
+/* display flex deixa elemento header container flexível */
+/* align items  deixa os items na vertical e os centraliza */
+/* justify content space between distribui o espaço disponível horizontalmente entre os itens do header os empurra para os extremos,deixa espaço igual entre eles */
+/* position fixed deixa o header fixo na posição especificada */
+/* height define altura do header /* *widht define a largura que ficou em 100% ocupando todo espaço disponível */
+/* background color irá definir a cor de fundo do header */
+/* padding 0 30 nesse caso foi definido o preenchimento de 0 no topo e na base e 30 px nas laterais do header */
 header {
     display: flex;
     align-items: center;
@@ -44,6 +51,7 @@ header nav a {
     color: #04BFAD;
 }
 
+/* Tudo que estiver dentro da main e nas seções irão receber as mesmas propriedades */
 main section {
     display: flex;
     flex-direction: column;
@@ -53,6 +61,7 @@ main section {
     padding: 100px 30px;
 }
 
+/* Toda a section que estiver uma tag div irá receber as mesmas propriedades */
 main section div {
     display: flex;
     align-items: center;
@@ -60,6 +69,7 @@ main section div {
     text-align: justify;
 }
 
+/* Toda setion que estiver uma div com imagem iraõ receber a mesma propriedade */
 main section div img {
     width: 300px;
     height: 300px;
@@ -67,10 +77,11 @@ main section div img {
     padding: 20px;
 }
 
+/* A propriedade flex direction colum irá definir a direção do layout como coluna para o elemento div com a classe container que está dentro de section com id "hobbies e dentro da main */
 main section#hobbies div.container {
-    
+
     flex-direction: column;
-    
+
 
 }
 
@@ -80,6 +91,7 @@ main section#contato form {
     width: 100%;
     max-width: 400px;
     height: 500px;
+    /* box shadow adiciona sombra ao redor do formulário */
     box-shadow: 0 0 10px rgba(7, 8, 16, 0.6);
     padding: 30px;
     border-radius: 20px;

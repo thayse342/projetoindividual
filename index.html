@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
 <!-- cabeça da página aqui faz toda a configuração -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,8 @@
     <title>Quem sou Eu</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Roboto&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <!-- tag <body> é meu corpo da página -->
@@ -30,7 +32,7 @@
     </header>
     <!-- tag <main> parte principal da página -->
     <main>
-        <!-- Tag section divide a página de acordo com o assunto -->
+        <!-- Tag section divide a página em seções de acordo com o assunto -->
         <section id="resumo">
             <h2>Olá! Meu nome é Thaise</h2>
             <!-- tag div nesse caso utilizei para englobar meu parágrafo com minha imagem para utilizar display flex -->
@@ -71,6 +73,13 @@
             </div>
         </section>
         <section id="contato">
+            <!-- <section id="contato">: Este é um elemento <section> com o ID "contato", usado para agrupar o conteúdo relacionado ao formulário de contato. -->
+            <!-- form cria formulario interativo,action atribuição de destino dos dados url -->
+            <!-- <h2>Contato</h2>: Este é um elemento <h2> que exibe o título "Contato", indicando a seção do formulário de contato. -->
+            <!-- label faz a ligação entre os elementos nome e a caixa do lado -->
+            <!--<input type="text" name="nome" id="nome">: Este é um campo de entrada de texto para o nome. O atributo name define o nome do campo, que será usado para identificá-lo quando o formulário for enviado. O atributo id é usado para associar o rótulo correspondente.  -->
+            <!--  button type submit pega dados do formulário Enviar para servidor -->
+
             <form action="">
                 <h2>Contato</h2>
                 <label for="nome">Nome: </label>
@@ -81,9 +90,7 @@
                 <textarea name="mensagem" id="mensagem"></textarea>
                 <button type="submit">Enviar</button>
             </form>
-            <!-- form cria formulario interativo,action atributo de destino dos dados url -->
-            <!-- label faz a ligação entre os elementos nome e a caixa do lado -->
-            <!-- button type submit pega dados do formulário Enviar para servidor -->
+
         </section>
     </main>
     <!--tag de rodapé da página -->
